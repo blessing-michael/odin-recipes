@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    /* background-color: rgb(48, 48, 105);
+     */
+     background: url(./recipes/images/food1.jpeg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* background-position: left; */
+     /* background-position-x: left;
+      */
+      background-position-y: top;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 40px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url('data:image/jpeg;base64,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');
+    /* background-size: 1px; */
+    /* background-position-x: right; */
+    
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: back 8s linear infinite;
+    /* background-clip: border-box; */
+    
+    
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0;
+    }
+    
+}
+.container a{
+    text-decoration: none;
+    /* color: aliceblue; */
+    border: 1px solid white;
+    color: rgb(231, 213, 213);
+    margin: 10px;
+    padding: 5px 20px;
+    text-transform: capitalize;
+    background: rgb(223, 93, 46);
+    font-family: sans-serif;
+    /* background-color: aqua; */
+
+}
+
+
+.recipe-container{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(#F2A65A ,#772F1A); */
+    /* color: white; */
+}
+
+.recipe-container img{
+    width: 400px;
+    border: 4px solid rgb(223, 93, 46);
+    background-size: cover;
+    background-position: center;
+ 
+}
+.recipe-container h1{
+    color:rgb(223, 93, 46) ;
+    /* font-weight: 100px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/* .recipe-container h3{
+    margin: 30px 50px; */
+    /* color: aqua; */
+/* } */
+h3{
+    font-size: 2.5rem;
+    /* color: aqua; */
+}
+.recipe-container .casserole-title{
+    margin: 30px 50px;
+
+}
+
+p{
+    /* color: dar; */
+    margin: 0px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+h4{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+
+ul{
+    list-style-type: none;
+    /* margin: 30px 30px; */
+}
+.ingredient li::before{
+    content: "•";
+    font-weight: 200;
+    color:rgb(223, 93, 46) ;
+    margin-right: 20px;
+    
+}
+ul li{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+ol li{
+    /* margin-top: 20px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 30px 40px;
+}
+@media screen and (min-width: 778px){
+    h1{
+        font-size: 70px;
+    }
+    .container a{
+        /* flex: 1; */
+        /* background-color: aquamarine; */
+        margin: 12px;
+        padding: 7px 35px;
+    }
+    p{
+            /* color: dar; */
+    /* margin: 0, 150px; */
+    background-color: aqua;
+    width: 700px;
+    }
+    ol li{
+        margin: 30px 260px;
+
+    }
+
+    
+}
